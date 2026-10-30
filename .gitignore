@@ -5,3 +5,9 @@ node_modules/
 *.log
 .DS_Store
 Thumbs.db
+
+# REMind v2 / benchmark artefacts
+.cache/
+bench/data/
+bench/results/**/smoke-*/
+bench/results/security/security-mock-*.json
