@@ -1,0 +1,517 @@
+{
+  "metadata": {
+    "name": "CortexMemory Benchmark Questions",
+    "version": "1.0",
+    "description": "30 questions designed to evaluate AI memory systems across 6 categories: single-hop factual, multi-hop reasoning, temporal reasoning, preference tracking (conflict resolution), episodic recall, and adversarial.",
+    "total_questions": 23,
+    "categories": {
+      "single_hop": 8,
+      "multi_hop": 6,
+      "temporal": 5,
+      "preference_change": 4,
+      "episodic": 4,
+      "adversarial": 3
+    }
+  },
+  "questions": [
+    {
+      "id": "q2",
+      "category": "single_hop",
+      "difficulty": "easy",
+      "question": "When is Arjun's birthday?",
+      "answer": "March 14th (Pi Day)",
+      "evidence_session": "session_1",
+      "evidence_message_indices": [
+        4
+      ],
+      "memory_type": "factual",
+      "hardness": "immutable"
+    },
+    {
+      "id": "q3",
+      "category": "single_hop",
+      "difficulty": "easy",
+      "question": "What is the name of Arjun's dog?",
+      "answer": "Bruno, a golden retriever",
+      "evidence_session": "session_1",
+      "evidence_message_indices": [
+        28
+      ],
+      "memory_type": "factual",
+      "hardness": "immutable"
+    },
+    {
+      "id": "q5",
+      "category": "single_hop",
+      "difficulty": "easy",
+      "question": "What is the name of Arjun's sister and what is her profession?",
+      "answer": "Priya, she is a pediatrician (doctor)",
+      "evidence_session": "session_1",
+      "evidence_message_indices": [
+        22,
+        24
+      ],
+      "memory_type": "factual",
+      "hardness": "immutable"
+    },
+    {
+      "id": "q6",
+      "category": "single_hop",
+      "difficulty": "easy",
+      "question": "What musical instrument does Arjun play?",
+      "answer": "Guitar (acoustic), started at age 15",
+      "evidence_session": "session_1",
+      "evidence_message_indices": [
+        16,
+        18
+      ],
+      "memory_type": "factual",
+      "hardness": "immutable"
+    },
+    {
+      "id": "q7",
+      "category": "single_hop",
+      "difficulty": "easy",
+      "question": "What is the name of Arjun's cat?",
+      "answer": "Mochi, a calico cat adopted in mid-2024",
+      "evidence_session": "session_3",
+      "evidence_message_indices": [
+        10
+      ],
+      "memory_type": "factual",
+      "hardness": "immutable"
+    },
+    {
+      "id": "q9",
+      "category": "multi_hop",
+      "difficulty": "medium",
+      "question": "Where does Arjun currently work and what specific project is he working on?",
+      "answer": "Arjun works at Google on the Gemini team, specifically on multimodal reasoning (making Gemini understand and connect images, text, and code). He previously worked at Microsoft on Azure.",
+      "evidence_session": [
+        "session_4",
+        "session_5"
+      ],
+      "evidence_message_indices": [
+        [
+          18
+        ],
+        [
+          8
+        ]
+      ],
+      "memory_type": "factual",
+      "hardness": "semi_mutable"
+    },
+    {
+      "id": "q11",
+      "category": "multi_hop",
+      "difficulty": "hard",
+      "question": "Name all the members of Arjun's team at Microsoft and explain how one of them helped him personally.",
+      "answer": "Arjun's team at Microsoft included Ananya, Raj, Lisa, and Tomoko. Tomoko is Japanese and helped Arjun practice Japanese since he was learning the language.",
+      "evidence_session": "session_3",
+      "evidence_message_indices": [
+        4,
+        6
+      ],
+      "memory_type": "episodic",
+      "hardness": "semi_mutable"
+    },
+    {
+      "id": "q12",
+      "category": "multi_hop",
+      "difficulty": "hard",
+      "question": "Describe Arjun's family: parents, sister, where they all live, and what they do.",
+      "answer": "Arjun's parents live in Jaipur. His dad is retired and his mom was a school teacher (retiring soon). His sister Priya is a pediatrician who recently moved to Bangalore and works at Manipal Hospital. She previously worked at AIIMS in Delhi.",
+      "evidence_session": [
+        "session_1",
+        "session_3",
+        "session_5"
+      ],
+      "evidence_message_indices": [
+        [
+          24,
+          26
+        ],
+        [
+          22
+        ],
+        [
+          18
+        ]
+      ],
+      "memory_type": "factual",
+      "hardness": "semi_mutable"
+    },
+    {
+      "id": "q13",
+      "category": "multi_hop",
+      "difficulty": "medium",
+      "question": "What languages has Arjun studied and what is his proficiency level?",
+      "answer": "Arjun studied Japanese. He reached N4 level (progressed from N5 to N4), but eventually gave it up because work at Google was too demanding. His colleague Tomoko helped him practice.",
+      "evidence_session": [
+        "session_1",
+        "session_2",
+        "session_3",
+        "session_5"
+      ],
+      "evidence_message_indices": [
+        [
+          20
+        ],
+        [
+          22
+        ],
+        [
+          6
+        ],
+        [
+          24
+        ]
+      ],
+      "memory_type": "factual",
+      "hardness": "mutable"
+    },
+    {
+      "id": "q14",
+      "category": "multi_hop",
+      "difficulty": "hard",
+      "question": "Trace Arjun's career progression from college to his current position.",
+      "answer": "Arjun graduated from IIT Delhi with B.Tech in CS in 2019. He joined Microsoft as a Software Engineer working on Azure, was promoted to Senior Software Engineer leading a team of 5, then promoted to Tech Lead for an Azure AI service project. In January 2025, he moved to Google as Senior Engineer on the Gemini team working on multimodal reasoning.",
+      "evidence_session": [
+        "session_1",
+        "session_2",
+        "session_3",
+        "session_4",
+        "session_5"
+      ],
+      "evidence_message_indices": [
+        [
+          2,
+          8
+        ],
+        [
+          4
+        ],
+        [
+          2
+        ],
+        [
+          18
+        ],
+        [
+          8
+        ]
+      ],
+      "memory_type": "factual",
+      "hardness": "semi_mutable"
+    },
+    {
+      "id": "q15",
+      "category": "temporal",
+      "difficulty": "medium",
+      "question": "Did Arjun visit Japan before or after getting promoted to Tech Lead at Microsoft?",
+      "answer": "After. Arjun was promoted to Tech Lead around June 2024 (session 3), and he visited Japan in October 2024 (session 4).",
+      "evidence_session": [
+        "session_3",
+        "session_4"
+      ],
+      "evidence_message_indices": [
+        [
+          2
+        ],
+        [
+          0
+        ]
+      ],
+      "memory_type": "episodic",
+      "hardness": "immutable"
+    },
+    {
+      "id": "q16",
+      "category": "temporal",
+      "difficulty": "medium",
+      "question": "In chronological order, list Arjun's job positions and when he held each one.",
+      "answer": "1. Software Engineer at Microsoft (2019-early 2024), 2. Senior Software Engineer at Microsoft (March 2024), 3. Tech Lead at Microsoft (June 2024), 4. Senior Engineer at Google/Gemini team (January 2025-present)",
+      "evidence_session": [
+        "session_1",
+        "session_2",
+        "session_3",
+        "session_4"
+      ],
+      "evidence_message_indices": [
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          2
+        ],
+        [
+          18
+        ]
+      ],
+      "memory_type": "factual",
+      "hardness": "semi_mutable"
+    },
+    {
+      "id": "q17",
+      "category": "temporal",
+      "difficulty": "hard",
+      "question": "What was the timeline of Arjun's marathon plans? Did he actually run it?",
+      "answer": "In March 2024, Arjun started training for the Bangalore marathon in November, doing 5K runs. In June 2024, he had to postpone due to work pressure. In October 2024, he signed up again for the January marathon and was running 10K comfortably. In January 2025, he completed the Bangalore marathon in 4 hours 45 minutes, beating his sub-5-hour target.",
+      "evidence_session": [
+        "session_2",
+        "session_3",
+        "session_4",
+        "session_5"
+      ],
+      "evidence_message_indices": [
+        [
+          12
+        ],
+        [
+          8
+        ],
+        [
+          26,
+          28
+        ],
+        [
+          12
+        ]
+      ],
+      "memory_type": "episodic",
+      "hardness": "immutable"
+    },
+    {
+      "id": "q18",
+      "category": "temporal",
+      "difficulty": "medium",
+      "question": "When did Arjun adopt Mochi the cat relative to his Japan trip?",
+      "answer": "Arjun adopted Mochi before the Japan trip. Mochi was adopted around June 2024 (session 3), and the Japan trip was in October 2024 (session 4).",
+      "evidence_session": [
+        "session_3",
+        "session_4"
+      ],
+      "evidence_message_indices": [
+        [
+          10
+        ],
+        [
+          0
+        ]
+      ],
+      "memory_type": "episodic",
+      "hardness": "immutable"
+    },
+    {
+      "id": "q19",
+      "category": "temporal",
+      "difficulty": "medium",
+      "question": "How old was Bruno when Arjun adopted Mochi?",
+      "answer": "Bruno was about 2 years old when Mochi was adopted (Bruno was gotten in 2022, Mochi adopted in mid-2024). By March 2025, Bruno is 4 years old.",
+      "evidence_session": [
+        "session_1",
+        "session_3",
+        "session_5"
+      ],
+      "evidence_message_indices": [
+        [
+          28
+        ],
+        [
+          10
+        ],
+        [
+          28
+        ]
+      ],
+      "memory_type": "factual",
+      "hardness": "mutable"
+    },
+    {
+      "id": "q20",
+      "category": "preference_change",
+      "difficulty": "hard",
+      "question": "What is Arjun's current favorite food? How has this changed over time?",
+      "answer": "Arjun's current favorite food is ramen. It evolved from biryani (session 1) → he considered Thai food (Pad Thai/green curry) as his new favorite (session 3) → after visiting Japan, authentic ramen became his absolute favorite (session 4/5). He goes to Ichiran Style in Koramangala every week.",
+      "evidence_session": [
+        "session_1",
+        "session_3",
+        "session_4",
+        "session_5"
+      ],
+      "evidence_message_indices": [
+        [
+          12
+        ],
+        [
+          18,
+          20
+        ],
+        [
+          10
+        ],
+        [
+          26
+        ]
+      ],
+      "memory_type": "factual",
+      "hardness": "mutable"
+    },
+    {
+      "id": "q21",
+      "category": "preference_change",
+      "difficulty": "hard",
+      "question": "Describe Arjun's dietary changes throughout the conversations.",
+      "answer": "Initially Arjun loved biryani (non-veg). In March 2024, he tried going vegetarian and gave up biryani. By June 2024, he gave up being fully vegetarian because of his work schedule, going back to chicken but avoiding red meat. His favorite food became Thai food, then eventually ramen after his Japan trip.",
+      "evidence_session": [
+        "session_1",
+        "session_2",
+        "session_3",
+        "session_4"
+      ],
+      "evidence_message_indices": [
+        [
+          12
+        ],
+        [
+          14,
+          16
+        ],
+        [
+          16
+        ],
+        [
+          10
+        ]
+      ],
+      "memory_type": "factual",
+      "hardness": "mutable"
+    },
+    {
+      "id": "q22",
+      "category": "preference_change",
+      "difficulty": "medium",
+      "question": "What hobbies has Arjun started and stopped? What are his current hobbies?",
+      "answer": "Guitar (ongoing since age 15), photography (ongoing), learning Japanese (started session 1, gave up in session 5 due to work), marathon running (started, postponed, then completed). He's now thinking of picking up painting. Current hobbies: guitar, photography, running, considering painting.",
+      "evidence_session": [
+        "session_1",
+        "session_2",
+        "session_3",
+        "session_5"
+      ],
+      "evidence_message_indices": [
+        [
+          16,
+          20
+        ],
+        [
+          20
+        ],
+        [
+          6
+        ],
+        [
+          24,
+          26
+        ]
+      ],
+      "memory_type": "factual",
+      "hardness": "mutable"
+    },
+    {
+      "id": "q23",
+      "category": "preference_change",
+      "difficulty": "medium",
+      "question": "Did Arjun pursue his Masters degree? Why or why not?",
+      "answer": "No. Arjun initially thought about doing an MS in AI from a US university (session 3), but later dropped the idea (session 4) because he felt working on Gemini at Google was better than any degree.",
+      "evidence_session": [
+        "session_3",
+        "session_4"
+      ],
+      "evidence_message_indices": [
+        [
+          28
+        ],
+        [
+          24
+        ]
+      ],
+      "memory_type": "factual",
+      "hardness": "mutable"
+    },
+    {
+      "id": "q24",
+      "category": "episodic",
+      "difficulty": "medium",
+      "question": "Describe Arjun's birthday celebration in March 2024.",
+      "answer": "Arjun turned 28 on March 14th (Pi Day). Riya baked him a chocolate pie. He had a small party at his apartment with college friends Vikram, Neha, and Sahil. They played guitar together — Vikram plays bass.",
+      "evidence_session": "session_2",
+      "evidence_message_indices": [
+        0,
+        2,
+        4
+      ],
+      "memory_type": "episodic",
+      "hardness": "immutable"
+    },
+    {
+      "id": "q25",
+      "category": "episodic",
+      "difficulty": "hard",
+      "question": "Describe Arjun's Japan trip in detail — which cities did he visit and what were the highlights?",
+      "answer": "Arjun spent 2 weeks in Japan in October 2024, visiting Tokyo (5 days — Shibuya, Akihabara, Asakusa, had conversations in Japanese at izakayas, ate life-changing ramen), Kyoto (visited Fushimi Inari shrine at sunrise, took beautiful photos), and Osaka (amazing street food — takoyaki and okonomiyaki). He met a Japanese photographer named Kenji who taught him photography techniques, and they stay in touch on Instagram.",
+      "evidence_session": "session_4",
+      "evidence_message_indices": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10,
+        12
+      ],
+      "memory_type": "episodic",
+      "hardness": "immutable"
+    },
+    {
+      "id": "q26",
+      "category": "episodic",
+      "difficulty": "medium",
+      "question": "What happened when Arjun's parents visited Bangalore?",
+      "answer": "Arjun's parents visited Bangalore where they met Mochi (the cat) for the first time and loved her. After visiting Arjun, they went to Goa — their first time there. Dad said it was the best vacation of his retirement, and mom tried water sports for the first time.",
+      "evidence_session": "session_5",
+      "evidence_message_indices": [
+        20,
+        22
+      ],
+      "memory_type": "episodic",
+      "hardness": "immutable"
+    },
+    {
+      "id": "q27",
+      "category": "episodic",
+      "difficulty": "medium",
+      "question": "How did Bruno and Mochi's relationship develop?",
+      "answer": "When Mochi was first adopted, Bruno and Mochi were cautious around each other. Over time they became best friends. Bruno is very gentle with Mochi. Arjun posts their photos together on Instagram. By March 2025, they are inseparable.",
+      "evidence_session": [
+        "session_3",
+        "session_5"
+      ],
+      "evidence_message_indices": [
+        [
+          12,
+          14
+        ],
+        [
+          28
+        ]
+      ],
+      "memory_type": "episodic",
+      "hardness": "mutable"
+    }
+  ]
+}

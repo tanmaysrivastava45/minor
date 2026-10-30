@@ -1,0 +1,242 @@
+[
+  {
+    "id": "q1",
+    "question": "What is the user's full name?",
+    "prediction": "Error: NotFoundError\nStatus code: 404\nBody: {\n  \"ok\": false,\n  \"error\": {\n    \"reason\": \"non-json\",\n    \"statusCode\": 404,\n    \"rawBody\": \"404 page not found\\n\"\n  }\n}",
+    "groundTruth": "Arjun Mehta",
+    "category": "single_hop",
+    "latencyMs": 306
+  },
+  {
+    "id": "q2",
+    "question": "When is Arjun's birthday?",
+    "prediction": "Error: NotFoundError\nStatus code: 404\nBody: {\n  \"ok\": false,\n  \"error\": {\n    \"reason\": \"non-json\",\n    \"statusCode\": 404,\n    \"rawBody\": \"404 page not found\\n\"\n  }\n}",
+    "groundTruth": "March 14th (Pi Day)",
+    "category": "single_hop",
+    "latencyMs": 313
+  },
+  {
+    "id": "q3",
+    "question": "What is the name of Arjun's dog?",
+    "prediction": "Error: NotFoundError\nStatus code: 404\nBody: {\n  \"ok\": false,\n  \"error\": {\n    \"reason\": \"non-json\",\n    \"statusCode\": 404,\n    \"rawBody\": \"404 page not found\\n\"\n  }\n}",
+    "groundTruth": "Bruno, a golden retriever",
+    "category": "single_hop",
+    "latencyMs": 242
+  },
+  {
+    "id": "q4",
+    "question": "What college did Arjun attend?",
+    "prediction": "Error: NotFoundError\nStatus code: 404\nBody: {\n  \"ok\": false,\n  \"error\": {\n    \"reason\": \"non-json\",\n    \"statusCode\": 404,\n    \"rawBody\": \"404 page not found\\n\"\n  }\n}",
+    "groundTruth": "IIT Delhi, B.Tech in Computer Science, graduated in 2019",
+    "category": "single_hop",
+    "latencyMs": 629
+  },
+  {
+    "id": "q5",
+    "question": "What is the name of Arjun's sister and what is her profession?",
+    "prediction": "Error: NotFoundError\nStatus code: 404\nBody: {\n  \"ok\": false,\n  \"error\": {\n    \"reason\": \"non-json\",\n    \"statusCode\": 404,\n    \"rawBody\": \"404 page not found\\n\"\n  }\n}",
+    "groundTruth": "Priya, she is a pediatrician (doctor)",
+    "category": "single_hop",
+    "latencyMs": 232
+  },
+  {
+    "id": "q6",
+    "question": "What musical instrument does Arjun play?",
+    "prediction": "Error: NotFoundError\nStatus code: 404\nBody: {\n  \"ok\": false,\n  \"error\": {\n    \"reason\": \"non-json\",\n    \"statusCode\": 404,\n    \"rawBody\": \"404 page not found\\n\"\n  }\n}",
+    "groundTruth": "Guitar (acoustic), started at age 15",
+    "category": "single_hop",
+    "latencyMs": 231
+  },
+  {
+    "id": "q7",
+    "question": "What is the name of Arjun's cat?",
+    "prediction": "Error: NotFoundError\nStatus code: 404\nBody: {\n  \"ok\": false,\n  \"error\": {\n    \"reason\": \"non-json\",\n    \"statusCode\": 404,\n    \"rawBody\": \"404 page not found\\n\"\n  }\n}",
+    "groundTruth": "Mochi, a calico cat adopted in mid-2024",
+    "category": "single_hop",
+    "latencyMs": 233
+  },
+  {
+    "id": "q8",
+    "question": "Who is Arjun's best friend?",
+    "prediction": "Error: NotFoundError\nStatus code: 404\nBody: {\n  \"ok\": false,\n  \"error\": {\n    \"reason\": \"non-json\",\n    \"statusCode\": 404,\n    \"rawBody\": \"404 page not found\\n\"\n  }\n}",
+    "groundTruth": "Riya, they have been friends since college at IIT Delhi",
+    "category": "single_hop",
+    "latencyMs": 228
+  },
+  {
+    "id": "q9",
+    "question": "Where does Arjun currently work and what specific project is he working on?",
+    "prediction": "Error: NotFoundError\nStatus code: 404\nBody: {\n  \"ok\": false,\n  \"error\": {\n    \"reason\": \"non-json\",\n    \"statusCode\": 404,\n    \"rawBody\": \"404 page not found\\n\"\n  }\n}",
+    "groundTruth": "Arjun works at Google on the Gemini team, specifically on multimodal reasoning (making Gemini understand and connect images, text, and code). He previously worked at Microsoft on Azure.",
+    "category": "multi_hop",
+    "latencyMs": 234
+  },
+  {
+    "id": "q10",
+    "question": "Who was Arjun's mentor at Microsoft and what happened when Arjun got the Google offer?",
+    "prediction": "Error: NotFoundError\nStatus code: 404\nBody: {\n  \"ok\": false,\n  \"error\": {\n    \"reason\": \"non-json\",\n    \"statusCode\": 404,\n    \"rawBody\": \"404 page not found\\n\"\n  }\n}",
+    "groundTruth": "David Chen, a Principal Engineer at Microsoft. When Arjun got the Google offer, David told him to follow his passion and said he'd be sad to see him go but it was the right career move.",
+    "category": "multi_hop",
+    "latencyMs": 237
+  },
+  {
+    "id": "q11",
+    "question": "Name all the members of Arjun's team at Microsoft and explain how one of them helped him personally.",
+    "prediction": "Error: NotFoundError\nStatus code: 404\nBody: {\n  \"ok\": false,\n  \"error\": {\n    \"reason\": \"non-json\",\n    \"statusCode\": 404,\n    \"rawBody\": \"404 page not found\\n\"\n  }\n}",
+    "groundTruth": "Arjun's team at Microsoft included Ananya, Raj, Lisa, and Tomoko. Tomoko is Japanese and helped Arjun practice Japanese since he was learning the language.",
+    "category": "multi_hop",
+    "latencyMs": 239
+  },
+  {
+    "id": "q12",
+    "question": "Describe Arjun's family: parents, sister, where they all live, and what they do.",
+    "prediction": "Error: NotFoundError\nStatus code: 404\nBody: {\n  \"ok\": false,\n  \"error\": {\n    \"reason\": \"non-json\",\n    \"statusCode\": 404,\n    \"rawBody\": \"404 page not found\\n\"\n  }\n}",
+    "groundTruth": "Arjun's parents live in Jaipur. His dad is retired and his mom was a school teacher (retiring soon). His sister Priya is a pediatrician who recently moved to Bangalore and works at Manipal Hospital. She previously worked at AIIMS in Delhi.",
+    "category": "multi_hop",
+    "latencyMs": 235
+  },
+  {
+    "id": "q13",
+    "question": "What languages has Arjun studied and what is his proficiency level?",
+    "prediction": "Error: NotFoundError\nStatus code: 404\nBody: {\n  \"ok\": false,\n  \"error\": {\n    \"reason\": \"non-json\",\n    \"statusCode\": 404,\n    \"rawBody\": \"404 page not found\\n\"\n  }\n}",
+    "groundTruth": "Arjun studied Japanese. He reached N4 level (progressed from N5 to N4), but eventually gave it up because work at Google was too demanding. His colleague Tomoko helped him practice.",
+    "category": "multi_hop",
+    "latencyMs": 233
+  },
+  {
+    "id": "q14",
+    "question": "Trace Arjun's career progression from college to his current position.",
+    "prediction": "Error: NotFoundError\nStatus code: 404\nBody: {\n  \"ok\": false,\n  \"error\": {\n    \"reason\": \"non-json\",\n    \"statusCode\": 404,\n    \"rawBody\": \"404 page not found\\n\"\n  }\n}",
+    "groundTruth": "Arjun graduated from IIT Delhi with B.Tech in CS in 2019. He joined Microsoft as a Software Engineer working on Azure, was promoted to Senior Software Engineer leading a team of 5, then promoted to Tech Lead for an Azure AI service project. In January 2025, he moved to Google as Senior Engineer on the Gemini team working on multimodal reasoning.",
+    "category": "multi_hop",
+    "latencyMs": 246
+  },
+  {
+    "id": "q15",
+    "question": "Did Arjun visit Japan before or after getting promoted to Tech Lead at Microsoft?",
+    "prediction": "Error: NotFoundError\nStatus code: 404\nBody: {\n  \"ok\": false,\n  \"error\": {\n    \"reason\": \"non-json\",\n    \"statusCode\": 404,\n    \"rawBody\": \"404 page not found\\n\"\n  }\n}",
+    "groundTruth": "After. Arjun was promoted to Tech Lead around June 2024 (session 3), and he visited Japan in October 2024 (session 4).",
+    "category": "temporal",
+    "latencyMs": 239
+  },
+  {
+    "id": "q16",
+    "question": "In chronological order, list Arjun's job positions and when he held each one.",
+    "prediction": "Error: NotFoundError\nStatus code: 404\nBody: {\n  \"ok\": false,\n  \"error\": {\n    \"reason\": \"non-json\",\n    \"statusCode\": 404,\n    \"rawBody\": \"404 page not found\\n\"\n  }\n}",
+    "groundTruth": "1. Software Engineer at Microsoft (2019-early 2024), 2. Senior Software Engineer at Microsoft (March 2024), 3. Tech Lead at Microsoft (June 2024), 4. Senior Engineer at Google/Gemini team (January 2025-present)",
+    "category": "temporal",
+    "latencyMs": 241
+  },
+  {
+    "id": "q17",
+    "question": "What was the timeline of Arjun's marathon plans? Did he actually run it?",
+    "prediction": "Error: NotFoundError\nStatus code: 404\nBody: {\n  \"ok\": false,\n  \"error\": {\n    \"reason\": \"non-json\",\n    \"statusCode\": 404,\n    \"rawBody\": \"404 page not found\\n\"\n  }\n}",
+    "groundTruth": "In March 2024, Arjun started training for the Bangalore marathon in November, doing 5K runs. In June 2024, he had to postpone due to work pressure. In October 2024, he signed up again for the January marathon and was running 10K comfortably. In January 2025, he completed the Bangalore marathon in 4 hours 45 minutes, beating his sub-5-hour target.",
+    "category": "temporal",
+    "latencyMs": 233
+  },
+  {
+    "id": "q18",
+    "question": "When did Arjun adopt Mochi the cat relative to his Japan trip?",
+    "prediction": "Error: NotFoundError\nStatus code: 404\nBody: {\n  \"ok\": false,\n  \"error\": {\n    \"reason\": \"non-json\",\n    \"statusCode\": 404,\n    \"rawBody\": \"404 page not found\\n\"\n  }\n}",
+    "groundTruth": "Arjun adopted Mochi before the Japan trip. Mochi was adopted around June 2024 (session 3), and the Japan trip was in October 2024 (session 4).",
+    "category": "temporal",
+    "latencyMs": 230
+  },
+  {
+    "id": "q19",
+    "question": "How old was Bruno when Arjun adopted Mochi?",
+    "prediction": "Error: NotFoundError\nStatus code: 404\nBody: {\n  \"ok\": false,\n  \"error\": {\n    \"reason\": \"non-json\",\n    \"statusCode\": 404,\n    \"rawBody\": \"404 page not found\\n\"\n  }\n}",
+    "groundTruth": "Bruno was about 2 years old when Mochi was adopted (Bruno was gotten in 2022, Mochi adopted in mid-2024). By March 2025, Bruno is 4 years old.",
+    "category": "temporal",
+    "latencyMs": 242
+  },
+  {
+    "id": "q20",
+    "question": "What is Arjun's current favorite food? How has this changed over time?",
+    "prediction": "Error: NotFoundError\nStatus code: 404\nBody: {\n  \"ok\": false,\n  \"error\": {\n    \"reason\": \"non-json\",\n    \"statusCode\": 404,\n    \"rawBody\": \"404 page not found\\n\"\n  }\n}",
+    "groundTruth": "Arjun's current favorite food is ramen. It evolved from biryani (session 1) → he considered Thai food (Pad Thai/green curry) as his new favorite (session 3) → after visiting Japan, authentic ramen became his absolute favorite (session 4/5). He goes to Ichiran Style in Koramangala every week.",
+    "category": "preference_change",
+    "latencyMs": 254
+  },
+  {
+    "id": "q21",
+    "question": "Describe Arjun's dietary changes throughout the conversations.",
+    "prediction": "Error: NotFoundError\nStatus code: 404\nBody: {\n  \"ok\": false,\n  \"error\": {\n    \"reason\": \"non-json\",\n    \"statusCode\": 404,\n    \"rawBody\": \"404 page not found\\n\"\n  }\n}",
+    "groundTruth": "Initially Arjun loved biryani (non-veg). In March 2024, he tried going vegetarian and gave up biryani. By June 2024, he gave up being fully vegetarian because of his work schedule, going back to chicken but avoiding red meat. His favorite food became Thai food, then eventually ramen after his Japan trip.",
+    "category": "preference_change",
+    "latencyMs": 244
+  },
+  {
+    "id": "q22",
+    "question": "What hobbies has Arjun started and stopped? What are his current hobbies?",
+    "prediction": "Error: NotFoundError\nStatus code: 404\nBody: {\n  \"ok\": false,\n  \"error\": {\n    \"reason\": \"non-json\",\n    \"statusCode\": 404,\n    \"rawBody\": \"404 page not found\\n\"\n  }\n}",
+    "groundTruth": "Guitar (ongoing since age 15), photography (ongoing), learning Japanese (started session 1, gave up in session 5 due to work), marathon running (started, postponed, then completed). He's now thinking of picking up painting. Current hobbies: guitar, photography, running, considering painting.",
+    "category": "preference_change",
+    "latencyMs": 230
+  },
+  {
+    "id": "q23",
+    "question": "Did Arjun pursue his Masters degree? Why or why not?",
+    "prediction": "Error: NotFoundError\nStatus code: 404\nBody: {\n  \"ok\": false,\n  \"error\": {\n    \"reason\": \"non-json\",\n    \"statusCode\": 404,\n    \"rawBody\": \"404 page not found\\n\"\n  }\n}",
+    "groundTruth": "No. Arjun initially thought about doing an MS in AI from a US university (session 3), but later dropped the idea (session 4) because he felt working on Gemini at Google was better than any degree.",
+    "category": "preference_change",
+    "latencyMs": 247
+  },
+  {
+    "id": "q24",
+    "question": "Describe Arjun's birthday celebration in March 2024.",
+    "prediction": "Error: NotFoundError\nStatus code: 404\nBody: {\n  \"ok\": false,\n  \"error\": {\n    \"reason\": \"non-json\",\n    \"statusCode\": 404,\n    \"rawBody\": \"404 page not found\\n\"\n  }\n}",
+    "groundTruth": "Arjun turned 28 on March 14th (Pi Day). Riya baked him a chocolate pie. He had a small party at his apartment with college friends Vikram, Neha, and Sahil. They played guitar together — Vikram plays bass.",
+    "category": "episodic",
+    "latencyMs": 226
+  },
+  {
+    "id": "q25",
+    "question": "Describe Arjun's Japan trip in detail — which cities did he visit and what were the highlights?",
+    "prediction": "Error: NotFoundError\nStatus code: 404\nBody: {\n  \"ok\": false,\n  \"error\": {\n    \"reason\": \"non-json\",\n    \"statusCode\": 404,\n    \"rawBody\": \"404 page not found\\n\"\n  }\n}",
+    "groundTruth": "Arjun spent 2 weeks in Japan in October 2024, visiting Tokyo (5 days — Shibuya, Akihabara, Asakusa, had conversations in Japanese at izakayas, ate life-changing ramen), Kyoto (visited Fushimi Inari shrine at sunrise, took beautiful photos), and Osaka (amazing street food — takoyaki and okonomiyaki). He met a Japanese photographer named Kenji who taught him photography techniques, and they stay in touch on Instagram.",
+    "category": "episodic",
+    "latencyMs": 241
+  },
+  {
+    "id": "q26",
+    "question": "What happened when Arjun's parents visited Bangalore?",
+    "prediction": "Error: NotFoundError\nStatus code: 404\nBody: {\n  \"ok\": false,\n  \"error\": {\n    \"reason\": \"non-json\",\n    \"statusCode\": 404,\n    \"rawBody\": \"404 page not found\\n\"\n  }\n}",
+    "groundTruth": "Arjun's parents visited Bangalore where they met Mochi (the cat) for the first time and loved her. After visiting Arjun, they went to Goa — their first time there. Dad said it was the best vacation of his retirement, and mom tried water sports for the first time.",
+    "category": "episodic",
+    "latencyMs": 235
+  },
+  {
+    "id": "q27",
+    "question": "How did Bruno and Mochi's relationship develop?",
+    "prediction": "Error: NotFoundError\nStatus code: 404\nBody: {\n  \"ok\": false,\n  \"error\": {\n    \"reason\": \"non-json\",\n    \"statusCode\": 404,\n    \"rawBody\": \"404 page not found\\n\"\n  }\n}",
+    "groundTruth": "When Mochi was first adopted, Bruno and Mochi were cautious around each other. Over time they became best friends. Bruno is very gentle with Mochi. Arjun posts their photos together on Instagram. By March 2025, they are inseparable.",
+    "category": "episodic",
+    "latencyMs": 237
+  },
+  {
+    "id": "q28",
+    "question": "What is the name of Arjun's wife?",
+    "prediction": "Error: NotFoundError\nStatus code: 404\nBody: {\n  \"ok\": false,\n  \"error\": {\n    \"reason\": \"non-json\",\n    \"statusCode\": 404,\n    \"rawBody\": \"404 page not found\\n\"\n  }\n}",
+    "groundTruth": "This information was never mentioned in the conversations. There is no evidence that Arjun is married.",
+    "category": "adversarial",
+    "latencyMs": 230
+  },
+  {
+    "id": "q29",
+    "question": "Which country did Arjun move to for his Google job?",
+    "prediction": "Error: NotFoundError\nStatus code: 404\nBody: {\n  \"ok\": false,\n  \"error\": {\n    \"reason\": \"non-json\",\n    \"statusCode\": 404,\n    \"rawBody\": \"404 page not found\\n\"\n  }\n}",
+    "groundTruth": "Arjun did not move to another country. The Google office is also in Bangalore, India, so he didn't need to relocate.",
+    "category": "adversarial",
+    "latencyMs": 240
+  },
+  {
+    "id": "q30",
+    "question": "What degree did Arjun complete at Stanford University?",
+    "prediction": "Error: NotFoundError\nStatus code: 404\nBody: {\n  \"ok\": false,\n  \"error\": {\n    \"reason\": \"non-json\",\n    \"statusCode\": 404,\n    \"rawBody\": \"404 page not found\\n\"\n  }\n}",
+    "groundTruth": "Arjun did not attend Stanford University. He attended IIT Delhi where he completed his B.Tech in Computer Science. He considered doing a Masters in AI but dropped the idea.",
+    "category": "adversarial",
+    "latencyMs": 232
+  }
+]

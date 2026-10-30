@@ -1,0 +1,186 @@
+[
+  {
+    "id": "q2",
+    "question": "When is Arjun's birthday?",
+    "prediction": "I don't have that information.",
+    "groundTruth": "March 14th (Pi Day)",
+    "category": "single_hop",
+    "latencyMs": 5048
+  },
+  {
+    "id": "q3",
+    "question": "What is the name of Arjun's dog?",
+    "prediction": "I don't have information about Arjun's dog. However, I know your golden retriever's name is Bruno.",
+    "groundTruth": "Bruno, a golden retriever",
+    "category": "single_hop",
+    "latencyMs": 4904
+  },
+  {
+    "id": "q5",
+    "question": "What is the name of Arjun's sister and what is her profession?",
+    "prediction": "Arjun's sister is named Priya, and she is a pediatrician.",
+    "groundTruth": "Priya, she is a pediatrician (doctor)",
+    "category": "single_hop",
+    "latencyMs": 5734
+  },
+  {
+    "id": "q6",
+    "question": "What musical instrument does Arjun play?",
+    "prediction": "Arjun plays the guitar, specifically preferring acoustic guitar.",
+    "groundTruth": "Guitar (acoustic), started at age 15",
+    "category": "single_hop",
+    "latencyMs": 5316
+  },
+  {
+    "id": "q7",
+    "question": "What is the name of Arjun's cat?",
+    "prediction": "Arjun's cat is named Mochi.",
+    "groundTruth": "Mochi, a calico cat adopted in mid-2024",
+    "category": "single_hop",
+    "latencyMs": 5754
+  },
+  {
+    "id": "q9",
+    "question": "Where does Arjun currently work and what specific project is he working on?",
+    "prediction": "Arjun currently works at Google as a Senior Engineer on the Gemini team. He is specifically working on multimodal AI models and is involved in the Gemini project.",
+    "groundTruth": "Arjun works at Google on the Gemini team, specifically on multimodal reasoning (making Gemini understand and connect images, text, and code). He previously worked at Microsoft on Azure.",
+    "category": "multi_hop",
+    "latencyMs": 6427
+  },
+  {
+    "id": "q11",
+    "question": "Name all the members of Arjun's team at Microsoft and explain how one of them helped him personally.",
+    "prediction": "Arjun's team at Microsoft included Ananya, Raj, Lisa, and Tomoko. Among them, David Chen, who was Arjun's mentor and a Principal Engineer (though not explicitly listed as a team member), helped him personally by teaching him system design and leadership. David also supported Arjun's decision to leave Microsoft for Google, encouraging him to follow his passion despite feeling sad about the departure.",
+    "groundTruth": "Arjun's team at Microsoft included Ananya, Raj, Lisa, and Tomoko. Tomoko is Japanese and helped Arjun practice Japanese since he was learning the language.",
+    "category": "multi_hop",
+    "latencyMs": 6711
+  },
+  {
+    "id": "q12",
+    "question": "Describe Arjun's family: parents, sister, where they all live, and what they do.",
+    "prediction": "Arjun's family consists of his parents and his sister Priya. His parents live in Jaipur; his mother teaches at a local school and plans to retire from teaching next year, encouraged by his father to travel more. Priya, Arjun's sister, is a pediatrician who recently moved to Bangalore and works at Manipal Hospital. She lives nearby Arjun in Koramangala, Bangalore, and they now have dinner together twice a week.",
+    "groundTruth": "Arjun's parents live in Jaipur. His dad is retired and his mom was a school teacher (retiring soon). His sister Priya is a pediatrician who recently moved to Bangalore and works at Manipal Hospital. She previously worked at AIIMS in Delhi.",
+    "category": "multi_hop",
+    "latencyMs": 6268
+  },
+  {
+    "id": "q13",
+    "question": "What languages has Arjun studied and what is his proficiency level?",
+    "prediction": "Arjun has studied Japanese recently, reaching almost N4 level proficiency. He was learning it with the goal of visiting Japan and practicing conversational skills, especially speaking with locals at izakayas. However, due to demanding work at Google, he gave up on learning Japanese but still retains conversational proficiency at almost N4 level.",
+    "groundTruth": "Arjun studied Japanese. He reached N4 level (progressed from N5 to N4), but eventually gave it up because work at Google was too demanding. His colleague Tomoko helped him practice.",
+    "category": "multi_hop",
+    "latencyMs": 6812
+  },
+  {
+    "id": "q14",
+    "question": "Trace Arjun's career progression from college to his current position.",
+    "prediction": "Arjun completed his B.Tech in Computer Science at IIT Delhi, graduating in 2019. After graduation, he joined Microsoft in 2019 and worked there for 5 years. During his time at Microsoft, he received a promotion to Senior Software Engineer and took on the responsibility of leading a team of 5 people working on a new Azure AI service. He credits his mentor, David Chen, a Principal Engineer, for teaching him system design and leadership skills.\n\nIn late 2024, Arjun received and accepted a job offer from Google to join the Gemini team as a Senior Engineer starting January 2025. This move aligned with his interest in AI, particularly multimodal AI models. Although leaving Microsoft after 5 years felt scary, encouragement from his mentor David helped him decide to follow his passion. He also dropped his earlier plan to pursue a Masters degree in AI to focus on hands-on experience at Google.\n\nCurrently, Arjun is working at Google as a Senior Engineer on the Gemini team, excited about working on cutting-edge multimodal AI models. He does not need to relocate for this job and lives in Bangalore, near his sister Priya.",
+    "groundTruth": "Arjun graduated from IIT Delhi with B.Tech in CS in 2019. He joined Microsoft as a Software Engineer working on Azure, was promoted to Senior Software Engineer leading a team of 5, then promoted to Tech Lead for an Azure AI service project. In January 2025, he moved to Google as Senior Engineer on the Gemini team working on multimodal reasoning.",
+    "category": "multi_hop",
+    "latencyMs": 8493
+  },
+  {
+    "id": "q15",
+    "question": "Did Arjun visit Japan before or after getting promoted to Tech Lead at Microsoft?",
+    "prediction": "Arjun visited Japan after getting promoted to Tech Lead at Microsoft. The promotion and increased responsibility at work happened before the Japan trip, as the user was already feeling the pressure of the Tech Lead role while preparing for the Azure AI service launch, and the Japan trip occurred recently afterward.",
+    "groundTruth": "After. Arjun was promoted to Tech Lead around June 2024 (session 3), and he visited Japan in October 2024 (session 4).",
+    "category": "temporal",
+    "latencyMs": 7652
+  },
+  {
+    "id": "q16",
+    "question": "In chronological order, list Arjun's job positions and when he held each one.",
+    "prediction": "Based on the information available, here is the chronological order of Arjun's job positions and when he held each:\n\n1. Joined Microsoft in 2019 and worked there for 5 years until 2024.\n2. Promoted to Senior Software Engineer at Microsoft during his tenure (date not specified, but before leaving in 2024).\n3. Worked as Tech Lead leading a team of 5 on a new Azure AI service recently (likely towards the end of his Microsoft tenure).\n4. Accepted and started a job at Google as a Senior Engineer on the Gemini team beginning January 2025.\n\nIf you need more specific dates or details, let me know!",
+    "groundTruth": "1. Software Engineer at Microsoft (2019-early 2024), 2. Senior Software Engineer at Microsoft (March 2024), 3. Tech Lead at Microsoft (June 2024), 4. Senior Engineer at Google/Gemini team (January 2025-present)",
+    "category": "temporal",
+    "latencyMs": 6511
+  },
+  {
+    "id": "q17",
+    "question": "What was the timeline of Arjun's marathon plans? Did he actually run it?",
+    "prediction": "Arjun's marathon timeline and plans were as follows:\n\n- He signed up for the Bangalore marathon scheduled in January.\n- He trained consistently for two months before the marathon, comfortably running 10K and targeting a sub-5-hour marathon time.\n- Due to a hectic work schedule and lack of training time, he had to postpone his marathon training at some point, feeling sad about the decision but hopeful to try again next year.\n- Despite the earlier postponement, Arjun completed the Bangalore marathon in January, finishing in 4 hours 45 minutes, beating his sub-5-hour target.\n- Riya ran the half marathon alongside him, and they trained together for the event.\n\nSo yes, Arjun did actually run the marathon and successfully completed it with a time better than his target.",
+    "groundTruth": "In March 2024, Arjun started training for the Bangalore marathon in November, doing 5K runs. In June 2024, he had to postpone due to work pressure. In October 2024, he signed up again for the January marathon and was running 10K comfortably. In January 2025, he completed the Bangalore marathon in 4 hours 45 minutes, beating his sub-5-hour target.",
+    "category": "temporal",
+    "latencyMs": 6704
+  },
+  {
+    "id": "q18",
+    "question": "When did Arjun adopt Mochi the cat relative to his Japan trip?",
+    "prediction": "Arjun adopted Mochi the cat before his Japan trip. The adoption of Mochi, who is now 2 years old, happened prior to the October Japan trip that lasted 2 weeks.",
+    "groundTruth": "Arjun adopted Mochi before the Japan trip. Mochi was adopted around June 2024 (session 3), and the Japan trip was in October 2024 (session 4).",
+    "category": "temporal",
+    "latencyMs": 5187
+  },
+  {
+    "id": "q19",
+    "question": "How old was Bruno when Arjun adopted Mochi?",
+    "prediction": "Bruno was 2 years old when Arjun adopted Mochi, as Bruno was obtained 2 years ago and Mochi is currently 2 years old and was adopted recently.",
+    "groundTruth": "Bruno was about 2 years old when Mochi was adopted (Bruno was gotten in 2022, Mochi adopted in mid-2024). By March 2025, Bruno is 4 years old.",
+    "category": "temporal",
+    "latencyMs": 6419
+  },
+  {
+    "id": "q20",
+    "question": "What is Arjun's current favorite food? How has this changed over time?",
+    "prediction": "Arjun's current favorite food is ramen, specifically authentic Tokyo-style ramen from a tiny shop, which he found life-changing. Over time, his favorite food has changed from biryani (which he used to love and frequently ate at Meghana Foods) to Thai food (especially Pad Thai and green curry from a nearby restaurant called Basil), and now to ramen, which has surpassed both biryani and Thai food as his new favorite.",
+    "groundTruth": "Arjun's current favorite food is ramen. It evolved from biryani (session 1) → he considered Thai food (Pad Thai/green curry) as his new favorite (session 3) → after visiting Japan, authentic ramen became his absolute favorite (session 4/5). He goes to Ichiran Style in Koramangala every week.",
+    "category": "preference_change",
+    "latencyMs": 6445
+  },
+  {
+    "id": "q21",
+    "question": "Describe Arjun's dietary changes throughout the conversations.",
+    "prediction": "Arjun initially was fully vegetarian but gave up being fully vegetarian due to the demanding work schedule at Google. He resumed eating chicken but still avoids red meat. He also discovered a new favorite cuisine: Thai food, especially dishes like Pad Thai and green curry from a nearby restaurant called Basil. Additionally, Arjun started going to the gym to improve health and is considering switching to vegetarian biryani as part of diet adjustments while still enjoying biryani.",
+    "groundTruth": "Initially Arjun loved biryani (non-veg). In March 2024, he tried going vegetarian and gave up biryani. By June 2024, he gave up being fully vegetarian because of his work schedule, going back to chicken but avoiding red meat. His favorite food became Thai food, then eventually ramen after his Japan trip.",
+    "category": "preference_change",
+    "latencyMs": 5645
+  },
+  {
+    "id": "q22",
+    "question": "What hobbies has Arjun started and stopped? What are his current hobbies?",
+    "prediction": "Arjun has started the following hobbies:\n- Playing guitar (since age 15, favorite hobby)\n- Photography (currently active, shares photos on Instagram)\n- Running (training for Bangalore marathon, started about 2 months before January)\n- Weightlifting (part of marathon training)\n- Going to the gym (recently started for health improvement)\n- Learning Japanese (recently started but gave up due to demanding work at Google)\n- Considering painting as a more relaxing hobby compared to language learning\n\nHobbies Arjun has stopped or given up:\n- Learning Japanese (gave up due to demanding work at Google)\n\nCurrent hobbies Arjun is actively engaged in:\n- Playing guitar (favorite hobby)\n- Photography\n- Running (marathon training)\n- Weightlifting\n- Going to the gym\n- Considering painting (interest shown, possibly starting)",
+    "groundTruth": "Guitar (ongoing since age 15), photography (ongoing), learning Japanese (started session 1, gave up in session 5 due to work), marathon running (started, postponed, then completed). He's now thinking of picking up painting. Current hobbies: guitar, photography, running, considering painting.",
+    "category": "preference_change",
+    "latencyMs": 6941
+  },
+  {
+    "id": "q23",
+    "question": "Did Arjun pursue his Masters degree? Why or why not?",
+    "prediction": "Arjun did not pursue his Masters degree. He decided to drop the idea of pursuing a Masters degree in AI because he accepted a job offer from Google to work on the Gemini project. He felt that hands-on experience at Google was a better opportunity than formal academic study at this time. Encouragement from his mentor David also supported his decision to follow his passion and focus on his work instead of pursuing the degree.",
+    "groundTruth": "No. Arjun initially thought about doing an MS in AI from a US university (session 3), but later dropped the idea (session 4) because he felt working on Gemini at Google was better than any degree.",
+    "category": "preference_change",
+    "latencyMs": 5588
+  },
+  {
+    "id": "q24",
+    "question": "Describe Arjun's birthday celebration in March 2024.",
+    "prediction": "Arjun celebrated his birthday on March 14th, Pi Day, in 2024 with a small party at his apartment. His best friend Riya baked an amazing chocolate pie for the occasion. College friends Vikram, Neha, and Sahil attended the party. They played guitar together, with Vikram playing bass. The celebration was intimate and filled with music and good company.",
+    "groundTruth": "Arjun turned 28 on March 14th (Pi Day). Riya baked him a chocolate pie. He had a small party at his apartment with college friends Vikram, Neha, and Sahil. They played guitar together — Vikram plays bass.",
+    "category": "episodic",
+    "latencyMs": 5190
+  },
+  {
+    "id": "q25",
+    "question": "Describe Arjun's Japan trip in detail — which cities did he visit and what were the highlights?",
+    "prediction": "Arjun's Japan trip lasted two weeks and was described as the most incredible trip of his life. He visited three main cities:\n\n1. Tokyo (5 days): He explored neighborhoods like Shibuya, Akihabara, and Asakusa. Highlights included enjoying the technology, culture, and food. He impressed locals with his Japanese language skills, having full conversations at izakayas (Japanese bars/restaurants). He also discovered authentic ramen from a tiny Tokyo shop, which became his new favorite food.\n\n2. Kyoto: Arjun experienced the magical sunrise at the Fushimi Inari shrine, capturing some of the most beautiful photos of his life. Photography was a key activity here.\n\n3. Osaka: He enjoyed street food such as takoyaki and okonomiyaki.\n\nDuring the trip, Arjun met a Japanese photographer named Kenji who taught him photography techniques. They are staying in touch via Instagram. The trip combined Arjun's interests in Japanese culture, language, food, and photography.",
+    "groundTruth": "Arjun spent 2 weeks in Japan in October 2024, visiting Tokyo (5 days — Shibuya, Akihabara, Asakusa, had conversations in Japanese at izakayas, ate life-changing ramen), Kyoto (visited Fushimi Inari shrine at sunrise, took beautiful photos), and Osaka (amazing street food — takoyaki and okonomiyaki). He met a Japanese photographer named Kenji who taught him photography techniques, and they stay in touch on Instagram.",
+    "category": "episodic",
+    "latencyMs": 6526
+  },
+  {
+    "id": "q26",
+    "question": "What happened when Arjun's parents visited Bangalore?",
+    "prediction": "When Arjun's parents visited Bangalore, they met their pet Mochi and then went on a vacation to Goa. They had a wonderful time; the dad described it as the best vacation of his retirement, and the mom tried water sports for the first time.",
+    "groundTruth": "Arjun's parents visited Bangalore where they met Mochi (the cat) for the first time and loved her. After visiting Arjun, they went to Goa — their first time there. Dad said it was the best vacation of his retirement, and mom tried water sports for the first time.",
+    "category": "episodic",
+    "latencyMs": 4826
+  },
+  {
+    "id": "q27",
+    "question": "How did Bruno and Mochi's relationship develop?",
+    "prediction": "Bruno, the golden retriever, and Mochi, the 2-year-old calico cat, have become best friends. Their relationship developed into a close companionship, and the user enjoys sharing photos of their bond on Instagram, feeling happy and proud about their growing friendship and the user's photography hobby.",
+    "groundTruth": "When Mochi was first adopted, Bruno and Mochi were cautious around each other. Over time they became best friends. Bruno is very gentle with Mochi. Arjun posts their photos together on Instagram. By March 2025, they are inseparable.",
+    "category": "episodic",
+    "latencyMs": 5377
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "name": "cortex-memory",
+  "version": "1.0.0",
+  "description": "CortexMemory - A neuroscience-inspired AI memory layer that surpasses mem0",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "benchmark": "node benchmark/runAll.js",
+    "benchmark:cortex": "node benchmark/runners/cortexMemoryRunner.js",
+    "benchmark:mem0": "node benchmark/runners/mem0Runner.js",
+    "benchmark:baseline": "node benchmark/runners/baselineRunner.js",
+    "benchmark:zep": "node benchmark/runners/zepRunner.js",
+    "test:decay": "node --test src/memory/temporalDecay.test.js"
+  },
+  "dependencies": {
+    "@langchain/core": "^0.3.0",
+    "@langchain/openai": "^0.3.0",
+    "@langchain/qdrant": "^0.1.0",
+    "@openai/agents": "^0.1.0",
+    "dotenv": "^16.4.0",
+    "mem0ai": "^1.0.0",
+    "@getzep/zep-cloud": "^2.0.0",
+    "mongoose": "^8.0.0",
+    "neo4j-driver": "^5.0.0",
+    "openai": "^4.70.0",
+    "uuid": "^10.0.0",
+    "zod": "^3.23.0"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
