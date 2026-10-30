@@ -121,7 +121,8 @@ export async function searchEpisodicMemories(userId, query, topK = null) {
     }).lean();
 
     if (!mongoDoc) {
-      // Vector exists but no metadata — include with basic info
+      // Vector exists but no metadata — include only if it provably belongs to this user
+      if (vr.metadata?.userId !== userId.toString()) continue;
       results.push({
         content: vr.pageContent,
         metadata: vr.metadata,

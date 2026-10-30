@@ -69,8 +69,9 @@ export async function addRelation({
   // Clean predicate: convert to UPPER_SNAKE_CASE for Neo4j convention
   const cleanPredicate = predicate.toUpperCase().replace(/\s+/g, "_").replace(/[^A-Z0-9_]/g, "");
 
-  // Build properties string for the object node
-  const propEntries = Object.entries(properties);
+  // Build properties string for the object node. Keys come from LLM output and are
+  // interpolated into Cypher, so only plain identifiers are allowed (prevents injection).
+  const propEntries = Object.entries(properties).filter(([k]) => /^[A-Za-z_][A-Za-z0-9_]{0,63}$/.test(k));
   const propsSetClause = propEntries.length > 0
     ? `, ${propEntries.map(([k, v]) => `n.${k} = $prop_${k}`).join(", ")}`
     : "";

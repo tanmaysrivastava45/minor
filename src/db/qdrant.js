@@ -60,8 +60,10 @@ export async function getVectorStore() {
  */
 export async function getUserRetriever(userId, topK = null) {
   const store = await getVectorStore();
+  // Scope every search to this user — without this filter, other users' episodes leak into the prompt.
   return store.asRetriever({
     k: topK || config.retrieval.vectorTopK,
+    filter: { must: [{ key: "metadata.userId", match: { value: userId.toString() } }] },
   });
 }
 
