@@ -1,3 +1,34 @@
+# REMind v2 (src/remind) — a memory that sleeps, safely
+
+`src/remind/` is the current engine. It runs without databases. Its SDK has three main calls,
+plus a deletion call:
+
+```js
+import { createRemind } from "./src/remind/index.js";
+const remind = createRemind({ llmOptions: { provider: "openai" }, budgetUSD: 1 });
+await remind.addToMemory("u1", [{ role: "user", content: "I'm Asha, I moved to Pune." }], { session: "s1", date: "2024-03-01" });
+await remind.sleep("u1", { now: "2024-03-02" });          // guarded, transactional consolidation
+const { context } = await remind.retrieve("u1", "Where does Asha live?", { now: "2024-03-05" });
+await remind.forget("u1", { session: "s1" });             // provenance-cascading deletion
+```
+
+The pipeline, in order:
+
+1. **L0 MemGuard:** local secret and PII detectors run before any text leaves the process.
+2. **L1 gate:** a heuristic, LLM or Jev classifier decides which turns are worth extracting.
+3. **L2 extraction:** batched LLM extraction of memories.
+4. **Write gate:** checks provenance and integrity labels, and relabels assistant or tool claims so they never become user facts.
+5. **Update phase:** Mem0-style ADD, UPDATE, INVALIDATE or NOOP, with bi-temporal history.
+6. **Validity:** expiry plus an assurity window, computed from conversation time.
+7. **Confidence:** a noisy-OR over *independent sessions*, so repeating a claim doesn't raise it.
+8. **Core tier:** a MemGPT-style block of always-in-context memories.
+9. **Sleep:** proposes MERGE, INVALIDATE, PROMOTE or DEMOTE. MemGuard-S verifies each operation against the append-only recall store, then the batch commits or rolls back.
+
+Benchmarks: see [bench/README.md](bench/README.md). The legacy CortexMemory v1 (MongoDB, Qdrant
+and Neo4j) is kept below as an ablation baseline. Its old `benchmark/` folder is superseded by `bench/`.
+
+---
+
 # CortexMemory: Neuroscience-Inspired AI Memory Layer
 
 CortexMemory is an advanced AI memory layer designed to surpass current state-of-the-art memory systems (like mem0 and Zep) by closely mimicking human brain memory retention patterns.
